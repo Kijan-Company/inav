@@ -5624,7 +5624,7 @@ Defines rotation rate on PITCH axis that UAV will try to archive on max. stick d
 
 ### pitot_hardware
 
-Selection of pitot hardware.
+Selection of pitot hardware. VIRTUAL only works if a GPS is enabled.
 
 | Default | Min | Max |
 | --- | --- | --- |
@@ -6049,16 +6049,6 @@ When feature SERIALRX is enabled, this allows connection to several receivers wh
 | Default | Min | Max |
 | --- | --- | --- |
 | _target default_ |  |  |
-
----
-
-### servo_autotrim_iterm_rate_limit
-
-Maximum I-term rate of change (units/sec) for autotrim to be applied. Prevents trim updates during maneuver transitions when I-term is changing rapidly. Only applies when using `feature FW_AUTOTRIM`.
-
-| Default | Min | Max |
-| --- | --- | --- |
-| 2 | 0 | 50 |
 
 ---
 
